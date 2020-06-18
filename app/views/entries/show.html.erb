@@ -1,0 +1,32 @@
+<h1>Lap Details</h1>
+
+<table id="table1">
+  <tr>
+    <th>User</th>
+	<th>Track</th>
+    <th>Vehicle</th>
+	<th>Laptime</th>
+    <th>Avg. Speed</th>
+	<th>Lap No.</th>
+  </tr>
+  
+  <tr>
+    <td><%= @entry.user %></td>
+	<td><%= @entry.track %></td>
+	<td><%= @entry.vehicle %></td>
+	<td><%= @entry.laptime %></td>
+	<td><%= @entry.avgspeed %></td>
+	<td><%= @entry.lapnum %></td>
+  </tr>
+</table>
+
+<p>
+  <%= link_to 'Edit', edit_entry_path(@entry) %>
+  <%= link_to 'Destroy', entry_path(@entry),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+</p>
+
+<p>
+  <%= link_to 'Back', entries_path %>
+</p>

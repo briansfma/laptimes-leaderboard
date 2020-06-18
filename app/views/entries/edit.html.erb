@@ -1,0 +1,43 @@
+<h1>Edit Entry (manual, for testing)</h1>
+
+<%= form_with(model: @entry) do |form| %>
+
+  <p>
+    <%= form.label :user %><br>
+    <%= form.text_field :user %>
+  </p>
+ 
+  <p>
+    <%= form.label :track %><br>
+    <%= form.text_field :track %>
+  </p>
+
+  <p>
+    <%= form.label :vehicle %><br>
+    <%= form.text_field :vehicle %>
+  </p>
+
+  <p>
+    <%= form.label :laptime %><br>
+    <%= form.text_field :laptime %>
+  </p>
+
+  <p>
+    <%= form.label :avgspeed %><br>
+    <%= form.text_field :avgspeed %>
+  </p>
+
+  <p>
+    <%= form.label :lapnum %><br>
+    <%= form.text_field :lapnum %>
+  </p>
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+  
+<% end %>
+
+<p>
+  <%= link_to 'Back', entries_path %>
+</p>

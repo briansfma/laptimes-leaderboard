@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: MyString
+  track: MyString
+  vehicle: MyString
+  laptime: MyString
+  avgspeed: MyString
+  lapnum: MyString
+
+two:
+  user: MyString
+  track: MyString
+  vehicle: MyString
+  laptime: MyString
+  avgspeed: MyString
+  lapnum: MyString

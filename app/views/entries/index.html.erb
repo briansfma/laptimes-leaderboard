@@ -1,0 +1,29 @@
+<h1>Leaderboard</h1>
+
+<table id="header">
+  <tr>
+    <th>User</th>
+	<th>Track</th>
+    <th>Vehicle</th>
+	<th>Laptime</th>
+    <th>Details</th>
+	<th></th>
+  </tr>
+</table>
+
+<table id="table1">  
+  <% @entries.each do |entry| %>
+    <tr>
+      <td><%= entry.user %></td>
+      <td><%= entry.track %></td>
+	  <td><%= entry.vehicle %></td>
+	  <td><%= entry.laptime %></td>
+      <td><%= link_to 'Show', entry_path(entry) %></td>
+      <td><%= link_to 'Remove', entry_path(entry),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<h2>Next update:</h2>

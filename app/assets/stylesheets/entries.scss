@@ -1,0 +1,62 @@
+// Place all the styles related to the Entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body {
+    font-family: Arial, Verdana, Tahoma, Sans-Serif;
+    color: #333333;
+    font-size: 12px;
+}
+
+P{
+    line-height: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #003366;
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+    background-color: #E3E3E3;
+    color: #4C4C4C;
+}
+
+span {
+    font-weight: bold;
+    color: #FF0000;
+    background-color: #FFFF00;
+}
+
+table {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+tr:nth-child(1) {
+        background: #EEEEEE
+    }
+
+table#table1 {
+    tr:nth-child(even) {
+        background: #E8F6FF
+    }
+    tr:nth-child(odd) {
+        background: #FFFFFF
+    }
+}
+
+th,
+td {
+    text-align: center;
+    border: 0px;
+    width: 100px;
+    overflow: hidden;
+}
