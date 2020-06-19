@@ -6,7 +6,7 @@ Since the Rails server accepts HTTP POST requests, one could even use this for r
 
 [//]: # (Image References)
 [image1]: Progress2.jpg "Runtime Example 1"
-[image1]: Progress3.jpg "Runtime Example 2"
+[image2]: Progress3.jpg "Runtime Example 2"
 
 ## Install
 
